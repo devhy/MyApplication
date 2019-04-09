@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".act.EventBusAct"
+    android:id="@+id/cl_parent">
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按钮1"/>
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按钮2"
+        app:layout_constraintLeft_toRightOf="@id/btn1"/>
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按钮3"
+        app:layout_constraintCircle="@id/btn2"
+        app:layout_constraintCircleRadius="60dp"
+        app:layout_constraintCircleAngle="130"/>
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按钮4(链首View)"
+        app:layout_constraintTop_toBottomOf="@id/btn3"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintEnd_toStartOf="@id/btn5"
+        app:layout_constraintStart_toStartOf="@id/cl_parent"/>
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按钮5"
+        app:layout_constraintTop_toBottomOf="@id/btn3"
+        app:layout_constraintStart_toEndOf="@id/btn4"
+        app:layout_constraintEnd_toStartOf="@id/btn6"/>
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按钮6"
+        app:layout_constraintTop_toBottomOf="@id/btn3"
+        app:layout_constraintStart_toEndOf="@id/btn5"
+        app:layout_constraintEnd_toEndOf="@id/cl_parent"/>
+
+</android.support.constraint.ConstraintLayout>

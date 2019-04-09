@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".act.DemoIndexActivity">
+
+    <Button
+        android:id="@+id/btn_plugin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="插件化入门Demo"/>
+
+    <Button
+        android:id="@+id/btn_eventBus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EventBus3.1.1 Demo"
+        app:layout_constraintTop_toBottomOf="@id/btn_plugin"/>
+
+</android.support.constraint.ConstraintLayout>
